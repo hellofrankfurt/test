@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+</head>
+<body style="background-color: #ffffff; color: #000; font-family: Arial; font-size: 15px; height: 100%; margin: 0;">
+	<div style="display:none;font-size:1px;color:white;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+		{content.titleRed}
+	</div>
+	<table height="100%" width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td valign="top" align="center" bgcolor="#ffffff">
+				<table cellpadding="0" cellspacing="0" width="680" border="0">
+					<tr>
+						<td width="187" height="134" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+							<img src="https://classicgolftours.de/files/email/logo2019.png" alt="Logo" width="187" height="134" style="display: block;">
+						</td>
+						<td width="493" height="134" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						
+							<table cellpadding="0" cellspacing="0" border="0" width="493">
+							<!-- tpl:if:golfde --><tr>
+							<td></td>
+							<td></td>
+							
+							<td width="20" align="right" style="-webkit-text-size-adjust: none;padding:10px 0 8px 0"><a href="https://www.facebook.com/cgtreisen/"><img src="http://www.classicgolftours.de/files/email/fb.png" width="130" alt="Facebook"></a></td>
+							</tr><!-- tpl:endif -->
+							
+							<!-- tpl:if:!golfde --><tr>
+							<td></td>
+						<td></td>
+						<td></td>
+							
+							<td width="20" align="right" style="-webkit-text-size-adjust: none;padding:10px 0 8px 0"><a href="https://www.facebook.com/cgtreisen/"><img src="http://www.classicgolftours.de/files/email/fb.png" width="130" alt="Facebook"></a></td>
+							</tr><!-- tpl:endif -->
+								<tr>
+									<td width="158" style="-webkit-text-size-adjust: none"></td>
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e2001a; -webkit-text-size-adjust: none">
+										<a style="color: #000; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/buchungsanfrage/">Buchungs-<br>anfrage</a>
+									</td>
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e2001a; <!-- tpl:if:golfde -->border-right: 1px solid #e2001a;<!-- tpl:endif --> -webkit-text-size-adjust: none">
+										<a style="color: #000; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/">Weitere<br>Angebote</a>
+									</td>
+									<!-- tpl:if:!golfde -->
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e2001a; border-right: 1px solid #e2001a; -webkit-text-size-adjust: none">
+										<a style="color: #000; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/fl3/Impressum/">Impressum</a>
+									</td>
+									<!-- tpl:endif -->
+									
+								</tr>
+								<tr>
+									<td colspan="5" align="right" style="font-family: Arial; padding-right: 10px; padding-top: 5px; -webkit-text-size-adjust: none">
+										<div style="color: #595959; font-family: Arial; font-size: 24px; font-weight: bold">Exklusive Golferlebnisse ‐ Weltweit</div>
+										<br>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!--<tr>
+						  <td width="187" height="1" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly; -webkit-text-size-adjust: none">
+							<img src="http://www.classicgolftours.de/files/email/logo2.png" alt="Logo" width="187" height="1" style="display: block;">
+						</td>
+						<td width="493" height="1" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly; -webkit-text-size-adjust: none">&nbsp;
+							
+						</td>
+					</tr>-->
+					<tr>
+						<td colspan="2" height="300" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+							<table cellpadding="0" cellspacing="0" border="0" width="680">
+								<tr>
+									<!-- tpl:repeat:headerimage -->
+									<!-- tpl:if:headerimage.spacer --><td width="10"></td><!-- tpl:endif -->
+									<td width="{headerimage.width}" height="300" style="-webkit-text-size-adjust: none">
+										<!-- tpl:if:{headerimage.link} -->
+										<a href="{headerimage.link}"><img src="{headerimage.src}" alt="Bild" width="{headerimage.width}" height="300" border="0" style="display: block;"></a>
+										<!-- tpl:else -->
+										<img src="{headerimage.src}" alt="Bild" width="{headerimage.width}" height="300" border="0" style="display: block;">
+										<!-- tpl:endif -->
+									</td>
+									<!-- tpl:endrepeat -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="10" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:repeat:content -->
+					<!-- tpl:if:content.titleRed -->
+					<tr class="content_titleRed">
+						<td colspan="2" bgcolor="#de0c15" align="center" style="font-family: Arial; color: #fff; font-size: 15px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; -webkit-text-size-adjust: none">
+							{content.titleRed}
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<!-- tpl:if:content.title -->
+					<tr class="content_title">
+						<td colspan="2" height="20" bgcolor="#ffffff" style="border-top: 1px solid #e2001a; -webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" bgcolor="#ffffff" align="center" style="font-family: Arial; color: #3e3d40; font-size: 15px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; -webkit-text-size-adjust: none">
+							{content.title}
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<!-- tpl:if:content.hotel -->
+					<tr class="content_hotel">
+						<td colspan="2" height="20" bgcolor="#ffffff" style="border-top: 1px solid #e2001a; -webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+							<table cellpadding="0" cellspacing="0" border="0" width="680">
+								<tr>
+									<!-- tpl:if:content.hotelimageleft -->
+									<td width="252" valign="top" style="font-family: Arial; -webkit-text-size-adjust: none">
+										<a href="{content.hotellink}" style="color: #3e3d40; text-decoration: none;"><img src="{content.hotelimage}" alt="Bild" width="252" height="212" border="0" style="display: block;"></a>
+									</td>
+									<!-- tpl:endif -->
+									<td width="428" valign="top" style="-webkit-text-size-adjust: none">
+										<table cellpadding="0" cellspacing="0" border="0" width="428">
+											<tr>
+												<td valign="top" style="font-family: Arial; color: #3e3d40; padding-left: 20px; padding-right: 20px; font-size: 17px; font-weight: bold; -webkit-text-size-adjust: none">
+													<a href="{content.hotellink}" style="color: #3e3d40; font-family: Arial; font-size: 15px; text-decoration: none;">{content.hotelname}</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="388" valign="top" style="font-family: Arial; font-size: 15px; color: #000; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; padding-top: 20px; -webkit-text-size-adjust: none">
+													{content.text}
+												</td>
+											</tr>
+										</table>
+									</td>
+									<!-- tpl:if:content.hotelimageright -->
+									<td width="252" valign="top" style="-webkit-text-size-adjust: none">
+										<a href="{content.hotellink}" style="color: #3e3d40; text-decoration: none;"><img src="{content.hotelimage}" alt="Bild" width="252" height="212" border="0" style="display: block;"></a>
+									</td>
+									<!-- tpl:endif -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<!-- tpl:if:content.plaintext -->
+					<tr class="content_plaintext">
+						<td colspan="2" height="20" bgcolor="#ffffff" style="border-top: 1px solid #e2001a; -webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" bgcolor="#ffffff" style="font-family: Arial; font-size: 15px; color: #000; padding-left: 50px; padding-right: 50px; padding-bottom: 20px; -webkit-text-size-adjust: none">
+							{content.text}
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<!-- tpl:if:content.headerimage -->	
+					<tr class="content_headerimage">
+						<td colspan="2" height="300" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+							<table cellpadding="0" cellspacing="0" border="0" width="680">
+								<tr>
+									<!-- tpl:repeat:contentheaderimage -->
+									<!-- tpl:if:contentheaderimage.spacer --><td width="10"></td><!-- tpl:endif -->
+									<td width="{contentheaderimage.width}" height="300" style="-webkit-text-size-adjust: none">
+										<!-- tpl:if:{contentheaderimage.link} -->
+										<a href="{contentheaderimage.link}"><img src="{contentheaderimage.src}" alt="Bild" width="{contentheaderimage.width}" height="300" border="0" style="display: block;"></a>
+										<!-- tpl:else -->
+										<img src="{contentheaderimage.src}" alt="Bild" width="{contentheaderimage.width}" height="300" border="0" style="display: block;">
+										<!-- tpl:endif -->
+									</td>
+									<!-- tpl:endrepeat -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->					
+					<!-- tpl:if:content.footer -->
+					<tr class="content_footer">
+						<td colspan="2" height="145" style="-webkit-text-size-adjust: none">
+							<img src="{content.footer}" alt="Footer" width="680" height="145" style="display: block;">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->			
+					<!-- tpl:if:content.news -->
+					<!-- tpl:if:{content.newsHeadline} -->
+					<tr class="content_titleRed">
+						<td colspan="2" bgcolor="#de0c15" align="center" style="font-family: Arial; color: #fff; font-size: 15px; padding-top: 5px; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; -webkit-text-size-adjust: none">
+							{content.newsHeadline}
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<tr>
+						<td colspan="2" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+							<table cellpadding="0" cellspacing="0" border="0" width="680">
+								<tr>
+									<td width="40">
+									</td>
+									<!-- tpl:if:content.twonews -->
+									<td width="100" valign="top" style="font-family: Arial; -webkit-text-size-adjust: none">
+										<!-- tpl:if:{content.newspictureone} -->
+										<img src="{content.newspictureone}" alt="Bild" width="100" height="200" border="0" style="display: block;">
+										<!-- tpl:endif -->
+									</td>
+									<td width="200" valign="top" style="font-family: Arial; font-size: 15px; color: #000; padding-left: 10px; padding-right: 10px; -webkit-text-size-adjust: none">
+										{content.newsone}
+									</td>
+									<td width="40">
+									</td>
+									<td width="100" valign="top" style="font-family: Arial; -webkit-text-size-adjust: none">
+										<!-- tpl:if:{content.newspicturetwo} -->
+										<img src="{content.newspicturetwo}" alt="Bild" width="100" height="200" border="0" style="display: block;">
+										<!-- tpl:endif -->
+									</td>
+									<td width="200" valign="top" style="font-family: Arial; font-size: 15px; color: #000; padding-left: 10px; padding-right: 10px; -webkit-text-size-adjust: none">
+										{content.newstwo}
+									</td>
+									<!-- tpl:else -->
+									<td width="100" valign="top" style="font-family: Arial; -webkit-text-size-adjust: none">
+										<!-- tpl:if:{content.newspictureone} -->
+										<img src="{content.newspictureone}" alt="Bild" width="100" height="200" border="0" style="display: block;">
+										<!-- tpl:endif -->
+									</td>
+									<td width="540" valign="top" style="font-family: Arial; font-size: 15px; color: #000; padding-left: 10px; padding-right: 10px; -webkit-text-size-adjust: none">
+										{content.newsone}
+									</td>
+									<!-- tpl:endif -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="-webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<!-- tpl:endif -->
+					<!-- tpl:endrepeat -->
+					<tr>
+						<td colspan="2" height="20" bgcolor="#ffffff" style="border-top: 1px solid #e2001a; -webkit-text-size-adjust: none">
+						</td>
+					</tr>
+					<tr>
+						<td width="187" height="148" bgcolor="#ffffff" valign="bottom" style="-webkit-text-size-adjust: none">
+							<img src="http://www.classicgolftours.de/files/email/logo.png" alt="Logo" width="187" height="134" style="display: block;">
+						</td>
+						<td width="493" height="148" bgcolor="#ffffff" style="padding-top: 20px;">
+							<table cellpadding="0" cellspacing="0" border="0" width="493">
+								<tr>
+									<td width="247" bgcolor="#ffffff" style="font-family: Arial; font-size: 12px; color: #000; -webkit-text-size-adjust: none" valign="top">
+										<strong>Buchungen und Informationen unter:</strong><br>
+										anfrage@classicgolftours.de<br>
+										www.classicgolftours.de<br>
+										Telefon: +49-(0)6187-9959020
+									</td>
+									<td width="246" bgcolor="#ffffff" style="font-family: Arial; font-size: 12px; color: #000; padding-left: 20px; border-left: 1px solid #e2001a; -webkit-text-size-adjust: none" valign="top">
+										<strong>Veranstalter:</strong><br>
+										<strong>Classic Golf Tours</strong><br>
+										CGT Reisen GmbH<br>
+										Uferstraße 24<br>
+										61137 Schöneck
+										HRB: Hanau 97230
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-family: Arial; font-size: 10px; color: #000; padding-right: 10px; padding-top: 10px; padding-bottom: 5px; -webkit-text-size-adjust: none">
+										Für die in diesem Newsletter aufgeführten Angebote gelten zum Teil besondere Buchungsbedingungen sowie zeitlich begrenzte Buchungsperioden. Die Angebote gelten nur für Neubuchungen ab der Veröffentlichung dieses Newsletters. Alle weiteren Details erhalten Sie mit Ihrem Angebot.
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="187" height="70" bgcolor="#595959" valign="top" style="-webkit-text-size-adjust: none">
+							<!--<img src="http://www.classicgolftours.de/files/email/logo.png" alt="Logo" width="187" height="18" style="display: block;">-->
+						</td>
+						<td width="493" height="70" bgcolor="#595959" align="right" style="-webkit-text-size-adjust: none">
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e3000f; -webkit-text-size-adjust: none">
+										<a style="color: #ffffff; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/buchungsanfrage/">Buchungs-<br>anfrage</a>
+									</td>
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e3000f; <!-- tpl:if:golfde -->border-right: 1px solid #e3000f;<!-- tpl:endif --> -webkit-text-size-adjust: none">
+										<a style="color: #ffffff; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/">Weitere Angebote</a>
+									</td>
+									<!-- tpl:if:!golfde -->
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e3000f; -webkit-text-size-adjust: none">
+										<a style="color: #ffffff; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="http://www.classicgolftours.de/fl3/Impressum/">Impressum</a>
+									</td>
+									<td width="95" height="46" align="center" style="font-family: Arial; border-left: 1px solid #e3000f; border-right: 1px solid #e3000f; -webkit-text-size-adjust: none">
+										<a style="color: #ffffff; display: inline-block; font-family: Arial; font-size: 12px; line-height: 14px; text-decoration: none;" href="$UNSUBSCRIBE$">Newsletter<br>abbestellen</a>
+									</td>
+									<!-- tpl:endif -->
+									<td width="10" style="-webkit-text-size-adjust: none"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
